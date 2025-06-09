@@ -2,19 +2,28 @@ import React from 'react';
 
 export const Navbar = () => {
   return (
-    <nav className="bg-blue-800 text-white p-4 flex justify-between items-center">
-      {/* Round Logo on the left */}
-      <div className="flex items-center">
+    <nav className=" text-black p-4 flex justify-between items-center gap-4">
+      
+      {/* Logo on the left */}
+      <div className="h-16 w-30 overflow-hidden rounded-full flex items-center justify-center ml-2">
         <img
           src="/logo.svg"
           alt="Logo"
-          className="w-10 h-10 rounded-full object-cover"
+          className="h-full w-full object-cover"
         />
       </div>
 
-      {/* Round Profile and Subscription Button on the right */}
-      <div className="flex items-center space-x-4">
-        <button className=" text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+      {/* Center Nav Options */}
+      <div className="flex space-x-6 text-black font-medium">
+        <a href="#home" className="hover:underline">Home</a>
+        <a href="#about" className="hover:underline">About</a>
+        <a href="#services" className="hover:underline">Services</a>
+        <a href="#contact" className="hover:underline">Contact</a>
+      </div>
+
+      {/* Profile and Subscribe on the right */}
+      <div className="flex items-center space-x-4 mr-2">
+        <button className="text-white font-semibold py-2 px-4 rounded-full transition duration-300 border border-white hover:bg-white hover:text-blue-800">
           Subscribe
         </button>
         <img
