@@ -1,0 +1,170 @@
+/* --- Business Verticals Section --- */
+#businessVerticals {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif; /* Using a common sans-serif font */
+}
+
+.businessVerticals_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.businessVerticals_head {
+    margin-bottom: 50px;
+}
+
+.businessVerticals_head h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.businessVerticals_head p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Business Verticals Cards --- */
+.businessVerticals_card_section {
+    display: flex; /* Use flexbox to arrange cards */
+    flex-wrap: nowrap; /* Keep all cards in one line on desktop */
+    gap: 30px; /* Space between cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.businessVerticals_card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 220px; /* Ensure cards have a consistent minimum height */
+    flex: 0 0 calc(20% - 24px); /* Each card takes 20% of width minus gap adjustments */
+}
+
+.businessVerticals_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.businessVerticals_card img {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px; /* Adjust image size as needed */
+    object-fit: contain; /* Ensures the image fits within its bounds without distortion */
+    margin-bottom: 20px;
+}
+
+.businessVerticals_card p {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .businessVerticals_head h3 {
+        font-size: 2em;
+    }
+
+    .businessVerticals_head p {
+        font-size: 1em;
+    }
+
+    .businessVerticals_card_section {
+        flex-wrap: wrap; /* Stack cards vertically on tablet */
+        gap: 20px; /* Reduce gap for tablet */
+    }
+
+    .businessVerticals_card {
+        flex: 0 0 100%; /* Full width for each card */
+        padding: 20px;
+        min-height: auto; /* Allow height to adjust */
+    }
+
+    .businessVerticals_card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+
+    .businessVerticals_card p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    #businessVerticals {
+        padding: 30px 15px;
+    }
+
+    .businessVerticals_head h3 {
+        font-size: 1.8em;
+    }
+
+    .businessVerticals_head p {
+        font-size: 0.9em;
+    }
+
+    .businessVerticals_card_section {
+        flex-wrap: wrap; /* Stack cards vertically on mobile */
+        gap: 15px; /* Further reduce gap */
+    }
+
+    .businessVerticals_card {
+        flex: 0 0 100%; /* Full width for each card */
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .businessVerticals_card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .businessVerticals_card p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .businessVerticals_head h3 {
+        font-size: 1.5em;
+    }
+
+    .businessVerticals_head p {
+        font-size: 0.85em;
+    }
+
+    .businessVerticals_card {
+        flex: 0 0 100%; /* Full width for each card */
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .businessVerticals_card img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+    }
+
+    .businessVerticals_card p {
+        font-size: 0.9em;
+    }
+
+    .businessVerticals_card_section {
+        gap: 10px; /* Minimize gap for very small screens */
+    }
+}

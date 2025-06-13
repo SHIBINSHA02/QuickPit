@@ -1,6 +1,13 @@
 import React from 'react';
-import './BusinessVerticals.css'; // Assuming you have some CSS for styling
+import './services.css'; // Assuming you have some CSS for styling
 
+// Import your SVG images
+import DoorstepServicesSVG from '../../../assets/images/landing/doorstep.svg';
+import TelematicsSVG from '../../../assets/images/landing/telematic.svg';
+import ExtendedWarrantySVG from '../../../assets/images/landing/warrenty.svg';
+import AccessoriesSVG from '../../../assets/images/landing/accessories.svg'; // Assuming this is the correct SVG for accessories
+// If OneGHTFYSVG corresponds to a different SVG, import it here
+// import OneGHTFYSVG from '../../../assets/images/landing/your_oneghtfy_svg_name.svg';
 
 
 function BusinessVerticals() {
@@ -17,7 +24,7 @@ function BusinessVerticals() {
     },
     {
       alt: 'car & bike accessories fitment',
-      src: TelematicsSVG,
+      src: AccessoriesSVG, // Changed to AccessoriesSVG
       text: 'Accessories Fitment',
     },
     {
@@ -27,8 +34,8 @@ function BusinessVerticals() {
     },
     {
       alt: 'telematic installation',
-      src: OneGHTFYSVG,
-      text: 'Telematic Installation',
+      src: TelematicsSVG, // Changed to TelematicsSVG
+      text: 'Telematic Installation'
     },
   ];
 
