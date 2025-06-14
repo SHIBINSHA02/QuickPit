@@ -1,0 +1,172 @@
+/* provider.css */
+
+.provider-registration-container {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+  }
+  
+  .provider-registration-content {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .provider-registration-content h1 {
+    color: #333;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .provider-registration-content p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .provider-form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #fdfdfd;
+  }
+  
+  .provider-form legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff; /* Primary brand color */
+    padding: 0 10px;
+    margin-left: -10px; /* Adjust to align with fieldset border */
+  }
+  
+  .provider-form h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="number"],
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: normal; /* Override bold from .form-group label */
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .checkbox-group input[type="checkbox"],
+  .form-group input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.1); /* Slightly larger checkboxes/radios */
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745; /* A green color for action */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 30px;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .submit-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .provider-registration-content {
+      padding: 20px 25px;
+    }
+  
+    .provider-registration-content h1 {
+      font-size: 1.8em;
+    }
+  
+    .provider-form legend {
+      font-size: 1.3em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .provider-registration-content {
+      padding: 15px 20px;
+    }
+  
+    .provider-registration-content h1 {
+      font-size: 1.5em;
+    }
+  
+    .provider-form legend {
+      font-size: 1.1em;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="number"],
+    .form-group textarea {
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  }
